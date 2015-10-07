@@ -2,6 +2,27 @@
 // --- Base
 // -----------------------
 
+// --- underline
+// -----------------------------
+@mixin underline($color, $colorHover: transparent, $height: bottom, $opacity:0.25) {
+    display: inline;
+    color: $color;
+    background-position: 0px $height;
+    background-repeat: repeat-x;
+    @include background-image(linear-gradient(rgba($color, $opacity), rgba($color, $opacity)));
+    background-size: 1em 1px;
+    &:hover {
+        @if $colorHover==transparent {
+            background: none;
+        }
+        @else {
+            @include background-image(linear-gradient(rgba($colorHover, $opacity), rgba($colorHover, $opacity)));
+            background-size: 1em 1px;
+            color: $colorHover;
+        }
+    }
+}
+
 // --- Inline-block
 // -----------------------------
 @mixin inline-block ($haslayout : true){
