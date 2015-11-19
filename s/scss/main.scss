@@ -1,5 +1,7 @@
 @charset "UTF-8";
+
 /*! Created #{timestamp()} */
+
 
 /* Compass */
 @import "compass/reset";
@@ -10,15 +12,15 @@
 @import "mixins";
 @import "variables";
 
-/* Layout */
-@import "layout/grid"; // bootstrap grid for responsive disign
-@import "layout/content";
-@import "layout/header";
-@import "layout/footer";
-
 /* Modules */
 @import "modules/form"; // forms
 @import "modules/btn"; // buttons
-@import "modules/icons"; // icons
+//@import "modules/icons"; // icons
 @import "modules/format"; // basic typography and format setup
 @import "modules/helpers"; // helper classes
+
+/* Layout */
+//@import "layout/grid"; // bootstrap grid for responsive disign
+@import "layout/content";
+@import "layout/header";
+@import "layout/footer";
