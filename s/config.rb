@@ -5,7 +5,7 @@ require "sass-timestamp"
 http_path = "../"
 css_dir = ""
 sass_dir = "scss"
-images_dir = "images"
+images_dir = "img"
 javascripts_dir = ""
 fonts_dir = "fonts"
 
